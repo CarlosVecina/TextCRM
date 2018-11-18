@@ -1,2 +1,2 @@
 # TextCRM
-Improving our CRM with Text Mining. A app-reviews example.
+Improving our CRM with Text Mining. An APP-reviews example.

@@ -1,6 +1,6 @@
 
-# 0. Levantamos la API desde el Prompt
-# 1. Descargamos los Datos desde la API
+# 0. Levantamos la API
+# 1. Descargamos los datos accediento a la API
 
 library(dplyr)
 library(tidyverse)
@@ -39,11 +39,9 @@ for(i in 1:length(bancos)){
     }
 }
 
-summary(reviewsBruto$BBVA$Valoracion)
-summary(reviewsBruto$Santander$Valoracion)
-summary(reviewsBruto$Bankinter$Valoracion)
-summary(reviewsBruto$Caixa$Valoracion)
-summary(reviewsBruto$EVO$Valoracion)
-summary(reviewsBruto$CajaMar$Valoracion)
+# Comprobamos que se han recogido los datos correctamente
+
+reviewsLista %>% map_dfc(~.x %>% select(Valoracion) %>% summary)
+
 
 

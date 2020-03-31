@@ -5,7 +5,7 @@ Ejemplo usando datos abiertos de los comentarios de las APPS bancarias española
 
 ## 1- Obtención de datos:
 
-Scrapeado mediante JS montado una API en local desde a la que poder llamar desde R.
+Scrapeado mediante JS montado una API en local a la que poder llamar desde R.
 https://github.com/facundoolano/google-play-api
 
 ## 2- Análisis exploratorias y estudio preliminar de valoraciones.
